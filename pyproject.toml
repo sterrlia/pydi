@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pydi"
+version = "0.1.0"
+readme = "README.md"
+authors = []
+description = ""
+
+[tool.poetry.dependencies]
+python = "^3.11"
+importlib = "^1.0.4"
+pathlib = "^1.0.1"
+
+
+[tool.poetry.group.test.dependencies]
+nose2 = "^0.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
