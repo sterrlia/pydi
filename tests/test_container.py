@@ -90,7 +90,7 @@ class TestContainer(unittest.TestCase):
         param = "striiiing"
         scheme = BuildScheme(SubClass, dict(param=param))
 
-        container = Container(build_schemes=dict(service=scheme))
+        container = Container(build_schemes=[scheme])
         instance: Class = container.get(Class) # type: ignore
 
         self.assertEqual(instance.get_sub().get_param(), param)
